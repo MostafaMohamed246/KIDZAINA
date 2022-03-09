@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1602267E-63FA-4D76-854A-AEE70502F579}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kidzania</RootNamespace>
+    <AssemblyName>kidzania</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleTCP, Version=1.0.24.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleTCP.1.0.24\lib\net45\SimpleTCP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adv.Designer.cs">
+      <DependentUpon>adv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="programing\employee.cs" />
+    <Compile Include="programing\login.cs" />
+    <Compile Include="programing\sponsor.cs" />
+    <Compile Include="programing\visiter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlconnention\Class1.cs" />
+    <Compile Include="users control\edit ads.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\edit ads.Designer.cs">
+      <DependentUpon>edit ads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\edit employ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\edit employ.Designer.cs">
+      <DependentUpon>edit employ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\employees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\employees.Designer.cs">
+      <DependentUpon>employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\game.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\game.Designer.cs">
+      <DependentUpon>game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\kidzania.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\kidzania.Designer.cs">
+      <DependentUpon>kidzania.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\kidzaniadetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\kidzaniadetails.Designer.cs">
+      <DependentUpon>kidzaniadetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\my account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\my account.Designer.cs">
+      <DependentUpon>my account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\problem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\problem.Designer.cs">
+      <DependentUpon>problem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\view vis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\view vis.Designer.cs">
+      <DependentUpon>view vis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\view_visiter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\view_visiter.Designer.cs">
+      <DependentUpon>view_visiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\visiteraccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\visiteraccount.Designer.cs">
+      <DependentUpon>visiteraccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users control\vister_ad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users control\vister_ad.Designer.cs">
+      <DependentUpon>vister_ad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visiter.Designer.cs">
+      <DependentUpon>visiter.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adv.resx">
+      <DependentUpon>adv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\edit ads.resx">
+      <DependentUpon>edit ads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\edit employ.resx">
+      <DependentUpon>edit employ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\employees.resx">
+      <DependentUpon>employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\game.resx">
+      <DependentUpon>game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\kidzania.resx">
+      <DependentUpon>kidzania.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\kidzaniadetails.resx">
+      <DependentUpon>kidzaniadetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\my account.resx">
+      <DependentUpon>my account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\problem.resx">
+      <DependentUpon>problem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\view vis.resx">
+      <DependentUpon>view vis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\view_visiter.resx">
+      <DependentUpon>view_visiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\visiteraccount.resx">
+      <DependentUpon>visiteraccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users control\vister_ad.resx">
+      <DependentUpon>vister_ad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visiter.resx">
+      <DependentUpon>visiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="picture\Synchronize_50px.png" />
+    <None Include="picture\Ticket_52px.png" />
+    <None Include="picture\Rating_50px.png" />
+    <None Include="picture\Help_50px.png" />
+    <None Include="picture\Edit_50px.png" />
+    <None Include="picture\Advertisement Page_50px.png" />
+    <None Include="picture\Trash_48px.png" />
+    <None Include="picture\Back_50px.png" />
+    <None Include="picture\User_50pxs.png" />
+    <None Include="picture\Front Desk_50px.png" />
+    <None Include="picture\Leadership_50px.png" />
+    <None Include="picture\Fidget Spinner_50px.png" />
+    <None Include="picture\Commercial_50px.png" />
+    <None Include="picture\Logout Rounded Left_50px.png" />
+    <None Include="picture\K_52px.png" />
+    <None Include="picture\download %287%29.png" />
+    <None Include="picture\download %282%29.png" />
+    <None Include="picture\download %284%29.png" />
+    <None Include="picture\download %286%29.png" />
+    <None Include="picture\Plus Math_50px.png" />
+    <None Include="picture\images %282%29.jpg" />
+    <None Include="picture\Back_64px.png" />
+    <None Include="picture\images.png" />
+    <None Include="picture\images.jpg" />
+    <None Include="picture\Add User Male_64px.png" />
+    <None Include="picture\Secured Letter_50pxs.png" />
+    <None Include="picture\Bulleted List_50px.png" />
+    <None Include="picture\admin.jpg" />
+    <None Include="picture\Eye_50px.png" />
+    <None Include="picture\Invisible_50px.png" />
+    <None Include="picture\Guardian_50px.png" />
+    <None Include="picture\Guardian_50pxp.png" />
+    <None Include="picture\Eye_50pxc.png" />
+    <None Include="picture\Delete_48px.png" />
+    <None Include="picture\Checkmark_48px.png" />
+    <None Include="picture\Secured Letter_50pxp.png" />
+    <None Include="picture\Secured Letter_50pxc.png" />
+    <None Include="picture\Secured Letter_50px.png" />
+    <None Include="picture\Phone_50pxp.png" />
+    <None Include="picture\Phone_50px.png" />
+    <None Include="picture\Invisible_50pxc.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="picture\welcome.jpg" />
+    <None Include="picture\User_50pxp.png" />
+    <None Include="picture\User_50px.png" />
+    <None Include="picture\Lock_64pxp.png" />
+    <None Include="picture\Lock_64px.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
